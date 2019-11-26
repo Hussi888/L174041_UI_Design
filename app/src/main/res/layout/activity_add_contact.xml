@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContacts"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Contact"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+
+    <EditText
+        android:id="@+id/add_name"
+        android:layout_width="320dp"
+        android:layout_height="43dp"
+        android:background="@drawable/textbox"
+        android:backgroundTint="#FFFF"
+        android:hint="Name"
+        android:textColor="@color/colorBackground"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/add_phone"
+        android:layout_width="320dp"
+        android:layout_height="43dp"
+        android:background="@drawable/textbox"
+        android:backgroundTint="#FFFF"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textColor="@color/colorBackground"
+        android:textAlignment="center"
+        android:textColorHint="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/add_email"
+        android:layout_width="320dp"
+        android:layout_height="43dp"
+        android:background="@drawable/textbox"
+        android:backgroundTint="#FFFF"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorBackground"
+        android:textAlignment="center"
+        android:textColorHint="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/addContactBtn"
+        android:layout_width="173dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Add"
+        android:textColor="@color/colorBackground"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_email"
+        app:layout_constraintVertical_bias="0.175" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
